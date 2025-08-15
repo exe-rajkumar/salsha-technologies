@@ -215,7 +215,7 @@ const HomePage = () => {
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                         <AnimatedSection delay={100}>
                             <div className="group text-center p-8 rounded-2xl hover:bg-gray-50 transition-all duration-300">
-                                <div className="w-16 h-16 bg-teal-100 rounded-2xl flex items-center justify-center text-teal-600 mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                                <div className="w-16 h-16 bg-teal-100 rounded-2xl flex items-center justify-center text-teal-600 mx-auto mb-6">
                                     <Zap size={24} />
                                 </div>
                                 <h3 className="text-xl font-bold text-gray-900 mb-4 font-heading">Lightning Fast</h3>
@@ -225,7 +225,7 @@ const HomePage = () => {
 
                         <AnimatedSection delay={200}>
                             <div className="group text-center p-8 rounded-2xl hover:bg-gray-50 transition-all duration-300">
-                                <div className="w-16 h-16 bg-teal-100 rounded-2xl flex items-center justify-center text-teal-600 mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                                <div className="w-16 h-16 bg-teal-100 rounded-2xl flex items-center justify-center text-teal-600 mx-auto mb-6">
                                     <Shield size={24} />
                                 </div>
                                 <h3 className="text-xl font-bold text-gray-900 mb-4 font-heading">Enterprise Security</h3>
@@ -237,7 +237,7 @@ const HomePage = () => {
 
                         <AnimatedSection delay={400}>
                             <div className="group text-center p-8 rounded-2xl hover:bg-gray-50 transition-all duration-300">
-                                <div className="w-16 h-16 bg-teal-100 rounded-2xl flex items-center justify-center text-teal-600 mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                                <div className="w-16 h-16 bg-teal-100 rounded-2xl flex items-center justify-center text-teal-600 mx-auto mb-6">
                                     <BarChart3 size={24} />
                                 </div>
                                 <h3 className="text-xl font-bold text-gray-900 mb-4 font-heading">Real-time Analytics</h3>
@@ -249,7 +249,7 @@ const HomePage = () => {
 
                         <AnimatedSection delay={500}>
                             <div className="group text-center p-8 rounded-2xl hover:bg-gray-50 transition-all duration-300">
-                                <div className="w-16 h-16 bg-teal-100 rounded-2xl flex items-center justify-center text-teal-600 mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                                <div className="w-16 h-16 bg-teal-100 rounded-2xl flex items-center justify-center text-teal-600 mx-auto mb-6">
                                     <Server size={24} />
                                 </div>
                                 <h3 className="text-xl font-bold text-gray-900 mb-4 font-heading">Cloud Infrastructure</h3>
@@ -259,7 +259,7 @@ const HomePage = () => {
 
                         <AnimatedSection delay={600}>
                             <div className="group text-center p-8 rounded-2xl hover:bg-gray-50 transition-all duration-300">
-                                <div className="w-16 h-16 bg-teal-100 rounded-2xl flex items-center justify-center text-teal-600 mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                                <div className="w-16 h-16 bg-teal-100 rounded-2xl flex items-center justify-center text-teal-600 mx-auto mb-6">
                                     <CheckCircle size={24} />
                                 </div>
                                 <h3 className="text-xl font-bold text-gray-900 mb-4 font-heading">Transparent Pricing</h3>
@@ -271,7 +271,7 @@ const HomePage = () => {
 
                         <AnimatedSection delay={700}>
                             <div className="group text-center p-8 rounded-2xl hover:bg-gray-50 transition-all duration-300">
-                                <div className="w-16 h-16 bg-teal-100 rounded-2xl flex items-center justify-center text-teal-600 mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                                <div className="w-16 h-16 bg-teal-100 rounded-2xl flex items-center justify-center text-teal-600 mx-auto mb-6">
                                     <Monitor size={24} />
                                 </div>
                                 <h3 className="text-xl font-bold text-gray-900 mb-4 font-heading">24/7 Monitoring</h3>
@@ -281,7 +281,7 @@ const HomePage = () => {
 
                         <AnimatedSection delay={800}>
                             <div className="group text-center p-8 rounded-2xl hover:bg-gray-50 transition-all duration-300">
-                                <div className="w-16 h-16 bg-teal-100 rounded-2xl flex items-center justify-center text-teal-600 mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                                <div className="w-16 h-16 bg-teal-100 rounded-2xl flex items-center justify-center text-teal-600 mx-auto mb-6">
                                     <Building size={24} />
                                 </div>
                                 <h3 className="text-xl font-bold text-gray-900 mb-4 font-heading">Business Focus</h3>
@@ -291,7 +291,7 @@ const HomePage = () => {
 
                         <AnimatedSection delay={900}>
                             <div className="group text-center p-8 rounded-2xl hover:bg-gray-50 transition-all duration-300">
-                                <div className="w-16 h-16 bg-teal-100 rounded-2xl flex items-center justify-center text-teal-600 mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                                <div className="w-16 h-16 bg-teal-100 rounded-2xl flex items-center justify-center text-teal-600 mx-auto mb-6">
                                     <Settings size={24} />
                                 </div>
                                 <h3 className="text-xl font-bold text-gray-900 mb-4 font-heading">Custom Solutions</h3>
@@ -301,7 +301,7 @@ const HomePage = () => {
 
                         <AnimatedSection delay={1000}>
                             <div className="group text-center p-8 rounded-2xl hover:bg-gray-50 transition-all duration-300">
-                                <div className="w-16 h-16 bg-teal-100 rounded-2xl flex items-center justify-center text-teal-600 mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                                <div className="w-16 h-16 bg-teal-100 rounded-2xl flex items-center justify-center text-teal-600 mx-auto mb-6">
                                     <Star size={24} />
                                 </div>
                                 <h3 className="text-xl font-bold text-gray-900 mb-4 font-heading">Continuous Learning</h3>
@@ -328,7 +328,7 @@ const HomePage = () => {
                         {services.map((service, index) => (
                             <AnimatedSection key={index} delay={index * 150}>
                                 <div className="group bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 border border-gray-100 h-full flex flex-col">
-                                    <div className="text-teal-600 mb-6 group-hover:scale-110 transition-transform duration-300">
+                                    <div className="text-teal-600 mb-6">
                                         {service.icon}
                                     </div>
                                     <h3 className="text-2xl font-bold text-gray-900 mb-4 font-heading">{service.title}</h3>

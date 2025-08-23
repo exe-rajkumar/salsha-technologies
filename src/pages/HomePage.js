@@ -1,44 +1,68 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Cloud, Shield, Code, Database, Building, Headphones, ArrowRight, CheckCircle, Star, Award, Zap, Globe, Lock, BarChart3, Smartphone, Server, Users, Monitor, Settings, Layers, LockKeyhole, MonitorPlay, BarChart, Network, LifeBuoy } from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
 
 const HomePage = () => {
+    
+
+
     const services = [
         {
             icon: <Layers size={48} />,
             title: "Cloud Solutions",
-            description: "We help businesses migrate to the cloud and optimize their infrastructure for scalability, cost-efficiency, and performance. Our cloud experts design and implement robust solutions using AWS, Azure, and Google Cloud Platform, ensuring seamless migration, automated scaling, and enterprise-grade security for your applications and data.",
-            features: ["Cloud Migration", "Auto Scaling", "Cost Optimization", "Disaster Recovery"]
+            description: "Migrate to the cloud with AWS, Azure, and GCP. We optimize infrastructure for scalability, cost-efficiency, and enterprise-grade security.",
+            features: ["Cloud Migration", "Auto Scaling", "Cost Optimization", "Disaster Recovery"],
+            image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
         },
         {
             icon: <LockKeyhole size={48} />,
             title: "Cybersecurity",
-            description: "Protect your business from evolving cyber threats with our comprehensive security solutions. We implement multi-layered security strategies including threat detection, vulnerability assessments, compliance management, and incident response. Our security experts ensure your data and systems remain protected 24/7 with advanced monitoring and rapid threat response capabilities.",
-            features: ["Threat Detection", "Compliance", "Penetration Testing", "Security Audits"]
+            description: "Protect your business with multi-layered security solutions including threat detection, compliance management, and 24/7 monitoring.",
+            features: ["Threat Detection", "Compliance", "Penetration Testing", "Security Audits"],
+            image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
         },
         {
             icon: <MonitorPlay size={48} />,
-            title: "Web Development",
-            description: "Create powerful, scalable web applications that drive business growth. We build modern, responsive websites and web applications using cutting-edge technologies like React, Vue.js, and Node.js. From e-commerce platforms to custom business applications, we deliver user-friendly solutions that provide exceptional user experiences and drive conversions.",
-            features: ["Custom Development", "E-commerce", "API Integration", "Progressive Web Apps"]
+            title: "Product Development",
+            description: "Build innovative digital products from concept to launch. We create scalable web apps, mobile applications, and enterprise software solutions.",
+            features: ["Product Strategy", "Full-Stack Development", "Mobile Apps", "Enterprise Software"],
+            image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
         },
         {
             icon: <BarChart size={48} />,
-            title: "Data Management",
-            description: "Transform your data into actionable insights with our comprehensive data management services. We design and optimize databases, implement data warehousing solutions, and create powerful analytics dashboards. Our data experts help you collect, process, and analyze data to make informed business decisions and identify growth opportunities.",
-            features: ["Data Analytics", "Business Intelligence", "Data Warehousing", "Predictive Analytics"]
+            title: "AI/ML Solutions",
+            description: "Harness AI and machine learning to transform operations. We develop custom models, intelligent automation, and predictive solutions.",
+            features: ["Machine Learning", "AI Automation", "Predictive Models", "Computer Vision"],
+            image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+        },
+        {
+            icon: <BarChart3 size={48} />,
+            title: "Data Analytics",
+            description: "Transform raw data into actionable insights. We help collect, process, and analyze data to uncover patterns and opportunities.",
+            features: ["Data Processing", "Statistical Analysis", "Trend Analysis", "Performance Metrics"],
+            image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+        },
+        {
+            icon: <Monitor size={48} />,
+            title: "Dashboard & BI",
+            description: "Create powerful business intelligence dashboards with real-time insights. Monitor KPIs and make data-driven decisions.",
+            features: ["Interactive Dashboards", "Real-time Reporting", "KPI Monitoring", "Executive Insights"],
+            image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
         },
         {
             icon: <Network size={48} />,
             title: "ERP Solutions",
-            description: "Streamline your business operations with integrated ERP solutions that connect all aspects of your organization. We implement and customize ERP systems to manage finance, inventory, human resources, and customer relationships. Our solutions automate workflows, improve efficiency, and provide real-time insights to help you make better business decisions.",
-            features: ["Process Automation", "Financial Management", "Inventory Control", "HR Management"]
+            description: "Streamline operations with integrated ERP systems. Manage finance, inventory, HR, and customer relationships in one platform.",
+            features: ["Process Automation", "Financial Management", "Inventory Control", "HR Management"],
+            image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
         },
         {
             icon: <LifeBuoy size={48} />,
             title: "IT Support",
-            description: "Ensure your technology infrastructure runs smoothly with our comprehensive IT support services. We provide 24/7 monitoring, proactive maintenance, and rapid response to technical issues. Our experienced support team handles everything from routine maintenance to complex troubleshooting, allowing you to focus on your core business while we manage your IT needs.",
-            features: ["24/7 Monitoring", "Proactive Maintenance", "Help Desk Support", "IT Consulting"]
+            description: "Ensure smooth technology infrastructure with 24/7 monitoring, proactive maintenance, and rapid technical support.",
+            features: ["24/7 Monitoring", "Proactive Maintenance", "Help Desk Support", "IT Consulting"],
+            image: "https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
         }
     ];
 
@@ -186,13 +210,13 @@ const HomePage = () => {
                                 scalable digital foundations.
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                                <button className="px-8 py-4 bg-white text-teal-600 font-semibold rounded-xl hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+                                <Link to="/services" className="px-8 py-4 bg-white text-teal-600 font-semibold rounded-xl hover:shadow-xl transform hover:scale-105 transition-all duration-300 inline-flex items-center">
                                     Explore Solutions
-                                    <ArrowRight className="inline ml-2" size={20} />
-                                </button>
-                                <button className="px-8 py-4 border-2 border-white text-white font-semibold rounded-xl hover:bg-white hover:text-teal-600 transition-all duration-300">
-                                    Watch Demo
-                                </button>
+                                    <ArrowRight className="ml-2" size={20} />
+                                </Link>
+                                <Link to="/contact" className="px-8 py-4 border-2 border-white text-white font-semibold rounded-xl hover:bg-white hover:text-teal-600 transition-all duration-300 inline-flex items-center">
+                                    Schedule a Demo
+                                </Link>
                             </div>
                         </div>
 
@@ -327,12 +351,22 @@ const HomePage = () => {
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {services.map((service, index) => (
                             <AnimatedSection key={index} delay={index * 150}>
-                                <div className="group bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 border border-gray-100 h-full flex flex-col">
-                                    <div className="text-teal-600 mb-6">
-                                        {service.icon}
+                                <div className="group bg-white rounded-3xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 border border-gray-100 h-full flex flex-col overflow-hidden">
+                                    {/* Image Section */}
+                                    <div className="relative h-48 overflow-hidden">
+                                        <img 
+                                            src={service.image} 
+                                            alt={service.title}
+                                            className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                                        />
+                                        <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                                     </div>
-                                    <h3 className="text-2xl font-bold text-gray-900 mb-4 font-heading">{service.title}</h3>
-                                    <p className="text-gray-600 leading-relaxed font-medium flex-grow">{service.description}</p>
+                                    
+                                                                        {/* Content Section */}
+                                    <div className="p-8 flex flex-col flex-grow">
+                                        <h3 className="text-2xl font-bold text-gray-900 mb-4 font-heading">{service.title}</h3>
+                                        <p className="text-gray-600 leading-relaxed font-medium">{service.description}</p>
+                                    </div>
                                 </div>
                             </AnimatedSection>
                         ))}
@@ -350,14 +384,23 @@ const HomePage = () => {
                             </h2>
                             <div className="space-y-6 text-lg text-gray-600 leading-relaxed">
                                 <p className="font-medium">
-                                    Founded in 2018, Salsha Technologies began as a small team of passionate
-                                    IT professionals who recognized that businesses were struggling with complex
-                                    technology challenges.
+                                    At Salsha Technologies, we are redefining the way businesses manage finance and technology. 
+                                    Founded on 1st August 2025, our vision is to empower enterprises with innovative NBFC solutions, 
+                                    intelligent cloud services, and next-generation digital transformation strategies.
                                 </p>
                                 <p className="font-medium">
-                                    Today, we're proud to have helped organizations ranging from 10-person
-                                    startups to 500+ employee enterprises optimize their technology infrastructure,
-                                    enhance security, and drive digital transformation initiatives.
+                                    We bring together deep expertise in financial services and enterprise IT solutions to deliver value 
+                                    that is secure, scalable, and future-ready. Whether it's enabling businesses with smart lending 
+                                    and NBFC operations, or driving growth through cloud adoption, data analytics, and managed services, 
+                                    we help organizations achieve sustainable success.
+                                </p>
+                                <p className="font-medium">
+                                    Our core values are built on trust, innovation, and resilience. We aim to be the partner of choice 
+                                    for businesses seeking not just solutions, but long-term strategic advantage.
+                                </p>
+                                <p className="font-medium">
+                                    With a team passionate about finance, technology, and transformation, we are committed to bridging 
+                                    the gap between infrastructure and intelligence, helping enterprises thrive in an increasingly digital economy.
                                 </p>
                                 <div className="grid grid-cols-3 gap-6 mt-8 pt-8 border-t border-gray-200">
                                     <div className="text-center">
@@ -378,18 +421,12 @@ const HomePage = () => {
 
                         <AnimatedSection delay={300}>
                             <div className="relative">
-                                <div className="bg-gradient-to-br from-teal-600 to-orange-500 rounded-3xl p-8 text-white">
-                                    <h3 className="text-2xl font-bold mb-6 font-heading">Our Mission</h3>
-                                    <p className="text-lg leading-relaxed mb-6 font-medium">
-                                        We believe technology should work for your business, not against it.
-                                        Our mission is to simplify complex IT challenges and provide solutions
-                                        that actually solve real business problems.
-                                    </p>
-                                    <div className="flex items-center space-x-4">
-                                        <CheckCircle className="text-orange-300" size={24} />
-                                        <span className="font-semibold">Proven Track Record</span>
-                                    </div>
-                                </div>
+                                <img 
+                                    src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                                    alt="Salsha Technologies Office" 
+                                    className="w-full h-96 object-cover rounded-3xl shadow-lg"
+                                />
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-3xl"></div>
                             </div>
                         </AnimatedSection>
                     </div>
@@ -454,7 +491,7 @@ const HomePage = () => {
             </section>
 
             {/* Blog Preview Section */}
-            <section className="py-20 bg-gray-50">
+            {/* <section className="py-20 bg-gray-50">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <AnimatedSection className="text-center mb-16">
                         <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6 font-heading">
@@ -492,7 +529,7 @@ const HomePage = () => {
                         </button>
                     </AnimatedSection>
                 </div>
-            </section>
+            </section> */}
 
             {/* Testimonials */}
             <section className="py-20 bg-white">
@@ -536,13 +573,13 @@ const HomePage = () => {
                             Join hundreds of businesses that have already accelerated their growth with our technology solutions.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                            <button className="px-8 py-4 bg-white text-teal-600 font-semibold rounded-xl hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+                            <Link to="/contact" className="px-8 py-4 bg-white text-teal-600 font-semibold rounded-xl hover:shadow-xl transform hover:scale-105 transition-all duration-300 inline-flex items-center">
                                 Get Started Today
-                                <ArrowRight className="inline ml-2" size={20} />
-                            </button>
-                            <button className="px-8 py-4 border-2 border-white text-white font-semibold rounded-xl hover:bg-white hover:text-teal-600 transition-all duration-300">
+                                <ArrowRight className="ml-2" size={20} />
+                            </Link>
+                            <Link to="/contact" className="px-8 py-4 border-2 border-white text-white font-semibold rounded-xl hover:bg-white hover:text-teal-600 transition-all duration-300 inline-flex items-center">
                                 Schedule a Demo
-                            </button>
+                            </Link>
                         </div>
                     </AnimatedSection>
                 </div>

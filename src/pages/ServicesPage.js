@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Cloud, Shield, Code, Database, Building, Headphones, CheckCircle, ArrowRight, Zap, Globe, Lock, BarChart3, Server, Users, Settings, Monitor } from 'lucide-react';
+import { Cloud, Shield, Code, Database, Building, Headphones, CheckCircle, ArrowRight, Zap, Globe, Lock, BarChart3, BarChart, Server, Users, Settings, Monitor } from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
 
 const ServicesPage = () => {
@@ -82,6 +82,81 @@ const ServicesPage = () => {
       ],
       technologies: ["React", "Vue.js", "Node.js", "Python", "Flutter", "React Native"],
       price: "Starting at ₹50,000/project"
+    },
+    {
+      id: 'ai-ml-solutions',
+      title: "AI/ML Solutions",
+      subtitle: "Artificial Intelligence & Machine Learning",
+      description: "Harness the power of artificial intelligence and machine learning to transform your business operations. We develop custom AI models, implement intelligent automation, and create smart solutions that learn and adapt.",
+      icon: <BarChart size={60} />,
+      gradient: "from-purple-500 to-pink-500",
+      image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      features: [
+        "Machine Learning Model Development",
+        "Natural Language Processing (NLP)",
+        "Computer Vision Solutions",
+        "AI-Powered Automation",
+        "Predictive Modeling",
+        "Intelligent Chatbots"
+      ],
+      benefits: [
+        "Automate repetitive tasks and processes",
+        "Improve accuracy and efficiency",
+        "Predict outcomes and trends",
+        "Reduce operational costs by 40-50%"
+      ],
+      technologies: ["Python", "TensorFlow", "PyTorch", "Scikit-learn", "OpenAI", "Hugging Face"],
+      price: "Starting at ₹45,000/month"
+    },
+    {
+      id: 'data-analytics',
+      title: "Data Analytics",
+      subtitle: "Advanced Data Analysis & Insights",
+      description: "Transform your raw data into actionable insights with our comprehensive data analytics services. We help you collect, process, and analyze data to uncover patterns, trends, and opportunities.",
+      icon: <BarChart3 size={60} />,
+      gradient: "from-blue-500 to-indigo-500",
+      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      features: [
+        "Data Collection & Processing",
+        "Statistical Analysis & Modeling",
+        "Trend Analysis & Forecasting",
+        "Performance Metrics & KPIs",
+        "Data Quality Assessment",
+        "Advanced Analytics Reporting"
+      ],
+      benefits: [
+        "Improve decision making with data insights",
+        "Identify new business opportunities",
+        "Optimize business processes",
+        "Increase revenue by 20-30%"
+      ],
+      technologies: ["Python", "R", "SQL", "Pandas", "NumPy", "Matplotlib"],
+      price: "Starting at ₹25,000/month"
+    },
+    {
+      id: 'dashboard-bi',
+      title: "Dashboard & BI",
+      subtitle: "Business Intelligence & Visualization",
+      description: "Create powerful business intelligence dashboards that provide real-time insights into your business performance. We design interactive visualizations and automated reporting systems.",
+      icon: <Monitor size={60} />,
+      gradient: "from-green-500 to-emerald-500",
+      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      features: [
+        "Interactive Dashboards",
+        "Real-time Reporting",
+        "KPI Monitoring & Alerts",
+        "Executive Dashboards",
+        "Custom Visualizations",
+        "Automated Report Generation"
+      ],
+      benefits: [
+        "Real-time visibility into business performance",
+        "Faster decision making with instant insights",
+        "Improved collaboration and communication",
+        "Reduce reporting time by 80%"
+      ],
+      technologies: ["Tableau", "Power BI", "QlikView", "D3.js", "Plotly", "Grafana"],
+      price: "Starting at ₹30,000/month"
     },
     {
       id: 'erp-solutions',
@@ -185,6 +260,12 @@ const ServicesPage = () => {
       <AnimatedSection>
         <section className="py-16 bg-gray-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl sm:text-4xl font-bold mb-6 font-heading">What We <span className="text-teal-600">Offer?</span></h2>
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                From cloud solutions to cybersecurity, we provide end-to-end IT services to help your business thrive in the digital age.
+              </p>
+            </div>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
               {stats.map((stat, index) => (
                 <div key={index} className="text-center">
@@ -200,50 +281,6 @@ const ServicesPage = () => {
         </section>
       </AnimatedSection>
 
-      {/* Services Overview */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold mb-6 font-heading">What We <span className="text-teal-600">Offer?</span></h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              From cloud solutions to cybersecurity, we provide end-to-end IT services to help your business thrive in the digital age.
-            </p>
-          </div>
-          
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {services.map((service, index) => (
-              <AnimatedSection key={service.id} delay={index * 100}>
-                <div 
-                  className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer border border-gray-100 overflow-hidden"
-                  onClick={() => setActiveService(activeService === service.id ? null : service.id)}
-                >
-                  <div className={`bg-gradient-to-r ${service.gradient} p-6 text-white`}>
-                    <div className="flex items-center justify-between mb-4">
-                      <div className="opacity-90">
-                        {service.icon}
-                      </div>
-                      <ArrowRight className={`transition-transform duration-300 ${activeService === service.id ? 'rotate-90' : 'group-hover:translate-x-1'}`} size={24} />
-                    </div>
-                    <h3 className="text-xl font-bold mb-2">{service.title}</h3>
-                    <p className="text-sm opacity-90">{service.subtitle}</p>
-                  </div>
-                  
-                  <div className="p-6">
-                    <p className="text-gray-600 mb-4">{service.description}</p>
-                    <div className="flex items-center justify-between">
-                      <span className="text-sm font-semibold text-gray-900">{service.price}</span>
-                      {/* <button className="text-teal-600 hover:text-teal-700 font-semibold text-sm">
-                        Learn More
-                      </button> */}
-                    </div>
-                  </div>
-                </div>
-              </AnimatedSection>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Detailed Service Sections */}
       {services.map((service, index) => (
         <AnimatedSection key={service.id}>
@@ -256,10 +293,10 @@ const ServicesPage = () => {
                     {service.icon}
                     <span className="ml-2">{service.title}</span>
                   </div> */}
-                  
+
                   <h2 className="text-3xl sm:text-4xl font-bold mb-6 font-heading">{service.title}</h2>
                   <p className="text-xl text-gray-600 mb-8 leading-relaxed">{service.description}</p>
-                  
+
                   <div className="grid md:grid-cols-2 gap-8 mb-8">
                     <div>
                       <h3 className="text-lg font-bold mb-4 text-gray-900">Key Features</h3>
@@ -272,7 +309,7 @@ const ServicesPage = () => {
                         ))}
                       </ul>
                     </div>
-                    
+
                     <div>
                       <h3 className="text-lg font-bold mb-4 text-gray-900">Benefits</h3>
                       <ul className="space-y-3">
@@ -285,7 +322,7 @@ const ServicesPage = () => {
                       </ul>
                     </div>
                   </div>
-                  
+
                   <div className="mb-8">
                     <h3 className="text-lg font-bold mb-4 text-gray-900">Technologies We Use</h3>
                     <div className="flex flex-wrap gap-3">
@@ -296,7 +333,7 @@ const ServicesPage = () => {
                       ))}
                     </div>
                   </div>
-                  
+
                   {/* <div className="flex flex-col sm:flex-row gap-4">
                     <button className="px-8 py-3 bg-gradient-to-r from-teal-600 to-orange-500 text-white font-semibold rounded-xl hover:shadow-lg transform hover:scale-105 transition-all duration-300">
                       Get Started
@@ -307,12 +344,12 @@ const ServicesPage = () => {
                     </button>
                   </div> */}
                 </div>
-                
+
                 {/* Image */}
                 <div className={`${index % 2 === 0 ? 'lg:order-1' : ''}`}>
                   <div className="relative">
-                    <img 
-                      src={service.image} 
+                    <img
+                      src={service.image}
                       alt={service.title}
                       className="w-full h-96 object-cover rounded-2xl shadow-lg"
                     />

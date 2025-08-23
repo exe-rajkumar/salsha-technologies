@@ -1,5 +1,5 @@
 import React from 'react';
-import { MapPin, Clock, DollarSign, Users, Heart, Zap, Globe, Award, ArrowRight, CheckCircle, Mail } from 'lucide-react';
+import { MapPin, Clock, Users, Heart, Zap, Globe, Award, ArrowRight, CheckCircle, Mail } from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
 
 const CareersPage = () => {
@@ -8,67 +8,89 @@ const CareersPage = () => {
             title: "Senior Full Stack Developer",
             location: "Delhi, India",
             type: "Full-time",
-            salary: "₹12-18 LPA",
+            salary: "₹18-28 LPA",
             department: "Engineering",
-            experience: "3-5 years",
-            description: "We're looking for a passionate Full Stack Developer to join our team and help build scalable web applications.",
-            skills: ["React", "Node.js", "Python", "AWS", "MongoDB"],
-            postedDate: "Dec 20, 2024"
+            experience: "4-7 years",
+            description: "We're looking for a passionate Full Stack Developer to join our team and help build scalable web applications using modern technologies.",
+            skills: ["React", "Node.js", "Python", "AWS", "MongoDB", "TypeScript"],
+            postedDate: "Jan 16, 2025"
         },
         {
             title: "Cloud Solutions Architect",
             location: "Remote",
             type: "Full-time",
-            salary: "₹15-25 LPA",
+            salary: "₹25-40 LPA",
             department: "Cloud Services",
-            experience: "5-8 years",
-            description: "Lead cloud architecture design and implementation for enterprise clients.",
-            skills: ["AWS", "Azure", "Terraform", "Docker", "Kubernetes"],
-            postedDate: "Dec 18, 2024"
+            experience: "6-10 years",
+            description: "Lead cloud architecture design and implementation for enterprise clients across multiple cloud platforms.",
+            skills: ["AWS", "Azure", "GCP", "Terraform", "Docker", "Kubernetes"],
+            postedDate: "Jan 15, 2025"
+        },
+        {
+            title: "AI/ML Engineer",
+            location: "Delhi, India",
+            type: "Full-time",
+            salary: "₹20-35 LPA",
+            department: "AI/ML",
+            experience: "3-6 years",
+            description: "Develop and deploy machine learning models and AI solutions for enterprise applications.",
+            skills: ["Python", "TensorFlow", "PyTorch", "Scikit-learn", "MLOps", "AWS SageMaker"],
+            postedDate: "Jan 14, 2025"
         },
         {
             title: "Cybersecurity Analyst",
             location: "Delhi, India",
             type: "Full-time",
-            salary: "₹8-12 LPA",
+            salary: "₹12-20 LPA",
             department: "Security",
-            experience: "2-4 years",
-            description: "Protect our clients' digital assets with advanced security monitoring and threat detection.",
-            skills: ["SIEM", "Penetration Testing", "Compliance", "Incident Response"],
-            postedDate: "Dec 15, 2024"
+            experience: "3-5 years",
+            description: "Protect our clients' digital assets with advanced security monitoring, threat detection, and incident response.",
+            skills: ["SIEM", "Penetration Testing", "Compliance", "Incident Response", "SOC"],
+            postedDate: "Jan 16, 2025"
         },
         {
             title: "DevOps Engineer",
             location: "Hybrid",
             type: "Full-time",
-            salary: "₹10-16 LPA",
+            salary: "₹15-25 LPA",
             department: "Operations",
-            experience: "3-6 years",
-            description: "Streamline our development and deployment processes with modern DevOps practices.",
-            skills: ["CI/CD", "Docker", "Kubernetes", "Jenkins", "Git"],
-            postedDate: "Dec 12, 2024"
+            experience: "4-7 years",
+            description: "Streamline our development and deployment processes with modern DevOps practices and cloud-native technologies.",
+            skills: ["CI/CD", "Docker", "Kubernetes", "Jenkins", "Git", "Ansible"],
+            postedDate: "Jan 13, 2025"
+        },
+        {
+            title: "Data Analyst",
+            location: "Delhi, India",
+            type: "Full-time",
+            salary: "₹10-18 LPA",
+            department: "Data Analytics",
+            experience: "2-4 years",
+            description: "Transform raw data into actionable insights and create comprehensive analytics reports for business decisions.",
+            skills: ["Python", "SQL", "Tableau", "Power BI", "Pandas", "NumPy"],
+            postedDate: "Jan 15, 2025"
         },
         {
             title: "UI/UX Designer",
             location: "Delhi, India",
             type: "Full-time",
-            salary: "₹6-10 LPA",
+            salary: "₹8-15 LPA",
             department: "Design",
-            experience: "2-4 years",
-            description: "Create beautiful and intuitive user experiences for our digital products.",
-            skills: ["Figma", "Adobe Creative Suite", "Prototyping", "User Research"],
-            postedDate: "Dec 10, 2024"
+            experience: "3-5 years",
+            description: "Create beautiful and intuitive user experiences for our digital products and applications.",
+            skills: ["Figma", "Adobe Creative Suite", "Prototyping", "User Research", "Design Systems"],
+            postedDate: "Jan 12, 2025"
         },
         {
-            title: "Sales Executive",
+            title: "Business Development Manager",
             location: "Delhi, India",
             type: "Full-time",
-            salary: "₹5-8 LPA + Commission",
+            salary: "₹12-20 LPA + Performance Bonus",
             department: "Sales",
-            experience: "1-3 years",
-            description: "Drive business growth by building relationships with potential clients.",
-            skills: ["B2B Sales", "CRM", "Presentation Skills", "Negotiation"],
-            postedDate: "Dec 8, 2024"
+            experience: "4-7 years",
+            description: "Drive business growth by building relationships with enterprise clients and managing key accounts.",
+            skills: ["B2B Sales", "CRM", "Enterprise Sales", "Account Management", "Negotiation"],
+            postedDate: "Jan 16, 2025"
         }
     ];
 
@@ -231,7 +253,7 @@ const CareersPage = () => {
                 <section id="job-openings" className="py-20 bg-gray-50">
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                         <div className="text-center mb-16">
-                            <h2 className="text-3xl sm:text-4xl font-bold mb-6 font-heading">Open Tech Positions</h2>
+                            <h2 className="text-3xl sm:text-4xl font-bold mb-6 font-heading">Open Positions</h2>
                             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
                                 Explore our current job openings and find the perfect role for your technical career growth.
                             </p>
@@ -252,7 +274,6 @@ const CareersPage = () => {
                                                     {job.type}
                                                 </div>
                                                 <div className="flex items-center">
-                                                    <DollarSign size={14} className="mr-1" />
                                                     {job.salary}
                                                 </div>
                                             </div>

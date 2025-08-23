@@ -33,7 +33,7 @@ const Footer = () => {
               {[Facebook, Twitter, Linkedin, Instagram].map((Icon, index) => (
                 <button
                   key={index}
-                  className="w-10 h-10 bg-gray-700 hover:bg-gradient-to-r hover:from-teal-600 hover:to-orange-500 rounded-lg flex items-center justify-center transition-all duration-300 transform hover:scale-110"
+                  className="w-10 h-10 bg-teal-700 hover:bg-teal-800 rounded-lg flex items-center justify-center transition-all duration-300 transform hover:scale-110"
                 >
                   <Icon size={20} />
                 </button>

@@ -13,7 +13,7 @@ const HomePage = () => {
             title: "Cloud Solutions",
             description: "Migrate to the cloud with AWS, Azure, and GCP. We optimize infrastructure for scalability, cost-efficiency, and enterprise-grade security.",
             features: ["Cloud Migration", "Auto Scaling", "Cost Optimization", "Disaster Recovery"],
-            image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+            image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
         },
         {
             icon: <LockKeyhole size={48} />,
@@ -27,7 +27,7 @@ const HomePage = () => {
             title: "Product Development",
             description: "Build innovative digital products from concept to launch. We create scalable web apps, mobile applications, and enterprise software solutions.",
             features: ["Product Strategy", "Full-Stack Development", "Mobile Apps", "Enterprise Software"],
-            image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+            image: "https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
         },
         {
             icon: <BarChart size={48} />,
@@ -404,11 +404,11 @@ const HomePage = () => {
                                 </p>
                                 <div className="grid grid-cols-3 gap-6 mt-8 pt-8 border-t border-gray-200">
                                     <div className="text-center">
-                                        <div className="text-3xl font-bold text-teal-600 font-heading">200+</div>
+                                        <div className="text-3xl font-bold text-teal-600 font-heading">15+</div>
                                         <div className="text-sm text-gray-500 font-medium">Happy Clients</div>
                                     </div>
                                     <div className="text-center">
-                                        <div className="text-3xl font-bold text-orange-500 font-heading">98%</div>
+                                        <div className="text-3xl font-bold text-orange-500 font-heading">100%</div>
                                         <div className="text-sm text-gray-500 font-medium">Success Rate</div>
                                     </div>
                                     <div className="text-center">

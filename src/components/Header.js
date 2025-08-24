@@ -34,10 +34,10 @@ const Header = () => {
                 <Link
                   key={item.path}
                   to={item.path}
-                  className={`relative px-6 py-2 rounded-full font-bold text-lg transition-all duration-300 ${
+                  className={`relative px-6 py-2 rounded-full text-lg transition-all duration-300 ${
                     location.pathname === item.path
-                      ? 'text-teal-600'
-                      : 'text-gray-700 hover:text-teal-600'
+                      ? 'text-teal-600 font-bold'
+                      : 'text-gray-700 hover:text-teal-600 font-normal'
                   }`}
                 >
                   {item.label}
@@ -66,10 +66,10 @@ const Header = () => {
                   key={item.path}
                   to={item.path}
                   onClick={() => setMobileMenuOpen(false)}
-                  className={`flex items-center w-full px-4 py-3 rounded-xl font-bold text-lg transition-all duration-200 ${
+                  className={`flex items-center w-full px-4 py-3 rounded-xl text-lg transition-all duration-200 ${
                     location.pathname === item.path
-                      ? 'text-teal-600'
-                      : 'text-gray-700 hover:text-teal-600'
+                      ? 'text-teal-600 font-bold'
+                      : 'text-gray-700 hover:text-teal-600 font-normal'
                   }`}
                 >
                   <div className={`w-2 h-2 rounded-full mr-3 ${

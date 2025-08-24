@@ -15,7 +15,7 @@ const ServicesPage = () => {
       description: "Transform your business with enterprise-grade cloud solutions. We help you migrate, optimize, and scale your infrastructure in the cloud.",
       icon: <Cloud size={60} />,
       gradient: "from-blue-500 to-cyan-500",
-      image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       features: [
         "AWS/Azure/GCP Migration",
         "Infrastructure as Code (Terraform)",
@@ -65,7 +65,7 @@ const ServicesPage = () => {
       description: "Build cutting-edge web and mobile applications with the latest technologies. From concept to deployment and maintenance.",
       icon: <Code size={60} />,
       gradient: "from-purple-500 to-indigo-500",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       features: [
         "Responsive Web Applications",
         "Mobile App Development",
@@ -236,10 +236,10 @@ const ServicesPage = () => {
   ];
 
   const stats = [
-    { number: "200+", label: "Projects Completed", icon: <CheckCircle size={24} /> },
-    { number: "98%", label: "Client Satisfaction", icon: <Zap size={24} /> },
+    { number: "100+", label: "Projects Completed", icon: <CheckCircle size={24} /> },
+    { number: "100%", label: "Client Satisfaction", icon: <Zap size={24} /> },
     { number: "24/7", label: "Support Available", icon: <Globe size={24} /> },
-    { number: "50+", label: "Expert Team", icon: <Users size={24} /> }
+    { number: "25+", label: "Expert Team", icon: <Users size={24} /> }
   ];
 
   return (

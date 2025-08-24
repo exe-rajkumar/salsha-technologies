@@ -186,7 +186,7 @@ const CareersPage = () => {
                         <div className="flex flex-wrap justify-center gap-4 text-sm">
                             <div className="flex items-center bg-white/10 rounded-full px-4 py-2">
                                 <Users size={16} className="mr-2" />
-                                <span>50+ Tech Professionals</span>
+                                <span>25+ Tech Professionals</span>
                             </div>
                             <div className="flex items-center bg-white/10 rounded-full px-4 py-2">
                                 <Globe size={16} className="mr-2" />

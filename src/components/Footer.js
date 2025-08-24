@@ -4,7 +4,7 @@ import { Facebook, Twitter, Linkedin, Instagram, MapPin, Mail, Phone } from 'luc
 
 const Footer = () => {
   const footerLinks = {
-    services: ["Cloud Solutions", "Cybersecurity", "Web Development", "ERP Solutions", "Database Admin", "IT Consulting"],
+    services: ["Artificial Intelligence & Machine Learning", "Data Analytics & Business Intelligence", "Cloud Solutions", "Cybersecurity", "ERP Solutions", "IT Consulting"],
     company: ["About Us", "Our Team", "Careers", "News & Updates"],
     support: ["Documentation", "Help Center", "Community", "Contact Support"]
   };

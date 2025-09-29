@@ -9,6 +9,7 @@ const Header = () => {
   const menuItems = [
     { label: 'Home', path: '/' },
     { label: 'Services', path: '/services' },
+    { label: 'Products', path: '/products' },
     { label: 'Careers', path: '/careers' }
   ];
 

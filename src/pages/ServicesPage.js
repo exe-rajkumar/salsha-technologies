@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Cloud, Shield, Code, Database, Building, Headphones, CheckCircle, ArrowRight, Zap, Globe, Lock, BarChart3, BarChart, Server, Users, Settings, Monitor } from 'lucide-react';
+import { Cloud, Shield, Code, Database, Building, Headphones, CheckCircle, ArrowRight, Zap, Globe, Lock, BarChart3, BarChart, Server, Users, Settings, Monitor, TestTube } from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
 
 const ServicesPage = () => {
@@ -232,6 +232,31 @@ const ServicesPage = () => {
       ],
       technologies: ["Strategy", "Architecture", "Process", "Training", "Analytics"],
       price: "Starting at ₹5,000/hour"
+    },
+    {
+      id: 'qa-testing',
+      title: "QA Testing",
+      subtitle: "Comprehensive Quality Assurance & Testing",
+      description: "Comprehensive QA testing services specialized in BFSI and NBFC loan journey testing, from lead creation to LOS and LMS systems.",
+      icon: <TestTube size={60} />,
+      gradient: "from-indigo-500 to-purple-500",
+      image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      features: [
+        "Manual & Automated Testing",
+        "Performance & Load Testing",
+        "Penetration Testing",
+        "BFSI & NBFC Testing",
+        "LOS & LMS Testing",
+        "Compliance Testing"
+      ],
+      benefits: [
+        "Reduce production bugs by 90%",
+        "Ensure regulatory compliance",
+        "Optimize loan processing workflows",
+        "Minimize financial risks"
+      ],
+      technologies: ["Selenium", "Jest", "Cypress", "Postman", "JMeter", "Burp Suite", "Appium", "AI Testing Tools"],
+      price: "Starting at ₹15,000/month"
     }
   ];
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Cloud, Shield, Code, Database, Building, Headphones, ArrowRight, CheckCircle, Star, Award, Zap, Globe, Lock, BarChart3, Smartphone, Server, Users, Monitor, Settings, Layers, LockKeyhole, MonitorPlay, BarChart, Network, LifeBuoy } from 'lucide-react';
+import { Cloud, Shield, Code, Database, Building, Headphones, ArrowRight, CheckCircle, Star, Award, Zap, Globe, Lock, BarChart3, Smartphone, Server, Users, Monitor, Settings, Layers, LockKeyhole, MonitorPlay, BarChart, Network, LifeBuoy, TestTube } from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
 
 const HomePage = () => {
@@ -63,6 +63,13 @@ const HomePage = () => {
             description: "Ensure smooth technology infrastructure with 24/7 monitoring, proactive maintenance, and rapid technical support.",
             features: ["24/7 Monitoring", "Proactive Maintenance", "Help Desk Support", "IT Consulting"],
             image: "https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+        },
+        {
+            icon: <TestTube size={48} />,
+            title: "QA Testing",
+            description: "BFSI & NBFC loan journey testing from lead creation to LOS and LMS systems.",
+            features: ["BFSI Testing", "LOS & LMS", "Security Testing", "Compliance"],
+            image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
         }
     ];
 
@@ -73,26 +80,6 @@ const HomePage = () => {
         { number: "99.9%", label: "Uptime Guarantee", icon: "⚡" }
     ];
 
-    const testimonials = [
-        {
-            name: "Rajesh Kumar",
-            company: "TechStart India",
-            text: "Salsha Technologies transformed our infrastructure. Their cloud migration saved us 40% on costs.",
-            rating: 5
-        },
-        {
-            name: "Priya Sharma",
-            company: "FinanceFlow NBFC",
-            text: "Excellent ERP implementation. Our operations are now 60% more efficient.",
-            rating: 5
-        },
-        {
-            name: "Amit Patel",
-            company: "DataDrive Solutions",
-            text: "Outstanding cybersecurity services. We feel completely secure with their protection.",
-            rating: 5
-        }
-    ];
 
     const features = [
         {
@@ -127,32 +114,6 @@ const HomePage = () => {
         }
     ];
 
-    const teamMembers = [
-        {
-            name: "Arjun Singh",
-            role: "CEO & Founder",
-            image: "👨‍💼",
-            description: "15+ years in IT leadership and digital transformation"
-        },
-        {
-            name: "Priya Verma",
-            role: "CTO",
-            image: "👩‍💻",
-            description: "Expert in cloud architecture and cybersecurity"
-        },
-        {
-            name: "Rahul Mehta",
-            role: "Head of Development",
-            image: "👨‍💻",
-            description: "Full-stack development and DevOps specialist"
-        },
-        {
-            name: "Anjali Desai",
-            role: "Head of Operations",
-            image: "👩‍💼",
-            description: "Process optimization and client success expert"
-        }
-    ];
 
     const blogPosts = [
         {
@@ -178,12 +139,6 @@ const HomePage = () => {
         }
     ];
 
-    const achievements = [
-        { icon: <Award size={24} />, title: "Microsoft Gold Partner", description: "Certified cloud solutions provider" },
-        { icon: <Award size={24} />, title: "AWS Advanced Consulting", description: "Premier consulting partner status" },
-        { icon: <Award size={24} />, title: "ISO 27001 Certified", description: "Information security management" },
-        { icon: <Award size={24} />, title: "Google Cloud Partner", description: "Official cloud services partner" }
-    ];
 
     return (
         <div className="pt-12 sm:pt-14">
@@ -385,7 +340,7 @@ const HomePage = () => {
                             <div className="space-y-6 text-lg text-gray-600 leading-relaxed">
                                 <p className="font-medium">
                                     At Salsha Technologies, we are redefining the way businesses manage finance and technology. 
-                                    Founded on 1st August 2025, our vision is to empower enterprises with innovative NBFC solutions, 
+                                    Founded on 22nd January 2025, our vision is to empower enterprises with innovative NBFC solutions, 
                                     intelligent cloud services, and next-generation digital transformation strategies.
                                 </p>
                                 <p className="font-medium">
@@ -435,60 +390,7 @@ const HomePage = () => {
 
 
 
-            {/* Team Section */}
-            <section className="py-20 bg-gray-50">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <AnimatedSection className="text-center mb-16">
-                        <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6 font-heading">
-                            Meet Our <span className="text-teal-600">Leadership</span>
-                        </h2>
-                        <p className="text-xl text-gray-600 max-w-3xl mx-auto font-medium">
-                            Experienced professionals dedicated to your success
-                        </p>
-                    </AnimatedSection>
 
-                    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                        {teamMembers.map((member, index) => (
-                            <AnimatedSection key={index} delay={index * 150}>
-                                <div className="bg-white rounded-2xl p-6 text-center shadow-lg hover:shadow-xl transition-all duration-300">
-                                    <div className="text-6xl mb-4">{member.image}</div>
-                                    <h3 className="text-xl font-bold text-gray-900 mb-2 font-heading">{member.name}</h3>
-                                    <p className="text-teal-600 font-semibold mb-3">{member.role}</p>
-                                    <p className="text-gray-600 text-sm font-medium">{member.description}</p>
-                                </div>
-                            </AnimatedSection>
-                        ))}
-                    </div>
-                </div>
-            </section>
-
-            {/* Achievements Section */}
-            <section className="py-20 bg-white">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <AnimatedSection className="text-center mb-16">
-                        <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6 font-heading">
-                            Our <span className="text-teal-600">Achievements</span>
-                        </h2>
-                        <p className="text-xl text-gray-600 max-w-3xl mx-auto font-medium">
-                            Recognized for excellence in technology solutions
-                        </p>
-                    </AnimatedSection>
-
-                    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                        {achievements.map((achievement, index) => (
-                            <AnimatedSection key={index} delay={index * 100}>
-                                <div className="text-center p-6 rounded-2xl bg-gradient-to-br from-gray-50 to-gray-100">
-                                    <div className="text-teal-600 mb-4 flex justify-center">
-                                        {achievement.icon}
-                                    </div>
-                                    <h3 className="text-lg font-bold text-gray-900 mb-2 font-heading">{achievement.title}</h3>
-                                    <p className="text-gray-600 text-sm font-medium">{achievement.description}</p>
-                                </div>
-                            </AnimatedSection>
-                        ))}
-                    </div>
-                </div>
-            </section>
 
             {/* Blog Preview Section */}
             {/* <section className="py-20 bg-gray-50">
@@ -531,36 +433,6 @@ const HomePage = () => {
                 </div>
             </section> */}
 
-            {/* Testimonials */}
-            <section className="py-20 bg-white">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <AnimatedSection className="text-center mb-16">
-                        <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6 font-heading">
-                            What Our <span className="text-teal-600">Clients Say</span>
-                        </h2>
-                        <p className="text-xl text-gray-600 font-medium">Real feedback from real businesses</p>
-                    </AnimatedSection>
-
-                    <div className="grid md:grid-cols-3 gap-8">
-                        {testimonials.map((testimonial, index) => (
-                            <AnimatedSection key={index} delay={index * 200}>
-                                <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
-                                    <div className="flex mb-4">
-                                        {[...Array(testimonial.rating)].map((_, i) => (
-                                            <Star key={i} className="text-yellow-500 fill-current" size={20} />
-                                        ))}
-                                    </div>
-                                    <p className="text-gray-600 mb-6 italic font-medium">"{testimonial.text}"</p>
-                                    <div>
-                                        <div className="font-semibold text-gray-900 font-heading">{testimonial.name}</div>
-                                        <div className="text-sm text-gray-500 font-medium">{testimonial.company}</div>
-                                    </div>
-                                </div>
-                            </AnimatedSection>
-                        ))}
-                    </div>
-                </div>
-            </section>
 
             {/* CTA Section */}
             <section className="py-20 bg-gradient-to-br from-teal-600 to-orange-500 text-white">

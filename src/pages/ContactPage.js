@@ -143,8 +143,9 @@ const ContactPage = () => {
                         <option value="web-development">Web Development</option>
                         <option value="erp-solutions">ERP Solutions</option>
                         <option value="database-admin">Database Administration</option>
-                        <option value="it-consulting">IT Consulting</option>
-                        <option value="other">Other</option>
+                                <option value="qa-testing">QA Testing</option>
+                                <option value="it-consulting">IT Consulting</option>
+                                <option value="other">Other</option>
                       </select>
                     </div>
                   </div>

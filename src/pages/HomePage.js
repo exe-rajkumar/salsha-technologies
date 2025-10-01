@@ -340,7 +340,7 @@ const HomePage = () => {
                             <div className="space-y-6 text-lg text-gray-600 leading-relaxed">
                                 <p className="font-medium">
                                     At Salsha Technologies, we are redefining the way businesses manage finance and technology. 
-                                    Founded on 22nd January 2025, our vision is to empower enterprises with innovative NBFC solutions, 
+                                    Founded on 22nd January 2024, our vision is to empower enterprises with innovative NBFC solutions, 
                                     intelligent cloud services, and next-generation digital transformation strategies.
                                 </p>
                                 <p className="font-medium">
